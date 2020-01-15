@@ -1,5 +1,6 @@
 import sys
 import pygame
+import random
 
 #must call before anything else for other functions to work
 pygame.init()
@@ -15,6 +16,25 @@ red = pygame.Color(255,0,0)
 #creates variables for player position
 player_x = 262.5
 player_y = 375
+
+#creates a class of the falling objects
+class Block(pygame.sprite.Sprite)
+    """This class represents the falling balls
+    it is derived from the Sprite class which is preloaded"""
+    def __init__(self, color, width, height, x, y):
+        """must be done first, initiallizes the ball with attributes"""
+        #This calls the Sprite parent class
+        super().__init__()
+        self.image = pygame.Surface(width, height)
+        self.image.fill(color)
+        self.rect =self.image.get_rect()
+        self.rect.y = random.randrange(0,400)
+        self.rect.x = random.randrange(0,600)
+    def update(self):
+        """makes the y position of the ball change (like falling)"""
+        self.rect.y +=random.randrange(1,5)
+
+
 
 # Main loop, game goes inside this loop
 while True:
@@ -44,5 +64,7 @@ while True:
         #draws the rectangle which the player can move
         pygame.draw.rect(screen, red, (player_x, player_y, 75, 25))
         
+        #draws the falling block
+
         #redraws the entire screen
         pygame.display.update()
