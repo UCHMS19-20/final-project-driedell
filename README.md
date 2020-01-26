@@ -8,10 +8,10 @@ This game was created as a final oroject for a programming course, and it has be
 This is a link to a flowchart created on draw.io which explains the logic behind this game.
 https://www.draw.io/#G1sqcOLMyvTsGg0yddEeRAom2MVK_OUjh1
 
-### Citations
+## Citations
 
 * “Pygame Basics”. Cogsci.rpi.edu, http://www.cogsci.rpi.edu/~destem/igd/pygame_cheat_sheet.pdf, accessed 1/10/20.
 
 * “CHAPTER 2 - PYGAME BASICS”. Inventwithpython.com, https://inventwithpython.com/pygame/chapter2.html#, accessed 1/10/20.
 
-* “Help! How Do I MOve An Image?”. Pygame.org, https://www.pygame.org/docs/tut/MoveIt.html, accessed 1/12/20.
+* “Help! How Do I Move An Image?”. Pygame.org, https://www.pygame.org/docs/tut/MoveIt.html, accessed 1/12/20.
