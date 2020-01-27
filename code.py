@@ -68,31 +68,31 @@ while True:
                 player_rect.x += 30
                 # screen.blit(player, (player_x, player_y))
 
-        #creates probability of a block being made, and will add to list
-        elif random.randint(1,20) == 10:
-            blocks.append(Block(random.randint(0,width)))
+    #creates probability of a block being made, and will add to list
+    if random.randint(1,20) == 10:
+        blocks.append(Block(random.randint(0,width)))
 
-        #creates a block if there are none
-        elif len(blocks) < 6:
-            blocks.append(Block(random.randint(0,width)))
+    #creates a block if there are none
+    elif len(blocks) < 6:
+        blocks.append(Block(random.randint(0,width)))
 
-        #makes the display screen white
-        screen.fill(white)
+    #makes the display screen white
+    screen.fill(white)
 
-        #draws the rectangle which the player can move
-        player = pygame.draw.rect(screen, red, player_rect)
-        
-        #draws the falling block by calling predefined functions
-        for b in blocks:
-            b.update()
-            b.show()
-            b.check()
-            b.check_hit(player)
+    #draws the rectangle which the player can move
+    player = pygame.draw.rect(screen, red, player_rect)
+    
+    #draws the falling block by calling predefined functions
+    for b in blocks:
+        b.update()
+        b.show()
+        b.check()
+        b.check_hit(player)
 
-        #deletes a block when it reaches the bottom
-        for i in range(len(blocks)-1,-1,-1):
-            if blocks[i].alive == False:
-                del blocks[i]
+    #deletes a block when it reaches the bottom
+    for i in range(len(blocks)-1,-1,-1):
+        if blocks[i].alive == False:
+            del blocks[i]
 
-        #redraws the entire screen
-        pygame.display.flip()
+    #redraws the entire screen
+    pygame.display.flip()
