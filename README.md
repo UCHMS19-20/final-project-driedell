@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # Intro to Programming Final Project - Fall 2019
 
 ## Game Description and Instructions
@@ -17,4 +15,3 @@ https://www.draw.io/#G1sqcOLMyvTsGg0yddEeRAom2MVK_OUjh1
 * “CHAPTER 2 - PYGAME BASICS”. Inventwithpython.com, https://inventwithpython.com/pygame/chapter2.html#, accessed 1/10/20.
 
 * “Help! How Do I Move An Image?”. Pygame.org, https://www.pygame.org/docs/tut/MoveIt.html, accessed 1/12/20.
->>>>>>> 6997c6664c19f83e0ad62edb75031104e94453c8
